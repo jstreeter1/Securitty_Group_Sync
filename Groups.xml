@@ -1,0 +1,57 @@
+<Groups Version='1'>
+   <group>
+     <Name>MC-GS-Employees-Administrators</Name>
+     <Description>Administrative Employee</Description>
+     <Criteria>(employeeStatus = 'A') and (EmployeeType = 'A')</Criteria>
+   </group>
+   <group>
+     <Name>MC-GS-Employees-Contractors</Name>
+     <Description>Madison College Consultant Employees</Description>
+     <Criteria>(employeeStatus = 'A') and (EmployeeType = 'C')</Criteria>
+   </group>
+   <group>
+     <Name>MC-GS-Employees-Staff</Name>
+     <Description>Madison College Staff Employees</Description>
+     <Criteria>(employeeStatus = 'A') and ((EmployeeType = 'E') or (EmployeeType = 'I'))</Criteria>
+   </group>
+   <group>
+     <Name>MC-GS-Employees-Faculty-Fulltime</Name>
+     <Description>Madison College Full Time Faculty Employees</Description>
+     <Criteria>(employeeStatus = 'A') and (EmployeeType = 'F') and (PositionTime = 'Full_Time')</Criteria>
+   </group>
+   <group>
+     <Name>MC-GS-Employees-Faculty-Parttime</Name>
+     <Description>Madison College Part Time Faculty Employees</Description>
+     <Criteria>(employeeStatus = 'A') and (EmployeeType = 'F') and (PositionTime = 'Part_Time')</Criteria>
+   </group>
+   <group>
+     <Name>MC-GS-Employees-Ft-Atkinson</Name>
+     <Description>Madison College Fort Atkinson Employees</Description>
+     <Criteria>(employeeStatus = 'A') and (officeLocationCode LIKE 'CCL30%') and ((EmployeeType = 'A') or (EmployeeType = 'C') or (EmployeeType = 'E') or (EmployeeType = 'F') or (EmployeeType = 'I'))</Criteria>
+   </group>
+   <group>
+     <Name>MC-GS-Employees-Madison-Comm-Ave</Name>
+     <Description>Madison College Commercial Ave Employees</Description>
+     <Criteria>(employeeStatus = 'A') and (officeLocationCode LIKE 'CCL03%') and ((EmployeeType = 'A') or (EmployeeType = 'C') or (EmployeeType = 'E') or (EmployeeType = 'F') or (EmployeeType = 'I'))</Criteria>
+   </group>
+   <group>
+     <Name>MC-GS-Employees-Madison-Downtown</Name>
+     <Description>Madison College Downtown Employees</Description>
+     <Criteria>(employeeStatus = 'A') and (officeLocationCode LIKE 'CCL02%') and ((EmployeeType = 'A') or (EmployeeType = 'C') or (EmployeeType = 'E') or (EmployeeType = 'F') or (EmployeeType = 'I'))</Criteria>
+   </group>
+   <group>
+     <Name>MC-GS-Employees-Portage</Name>
+     <Description>Madison College Portage Employees</Description>
+     <Criteria>(employeeStatus = 'A') and (officeLocationCode LIKE 'CCL15%') and ((EmployeeType = 'A') or (EmployeeType = 'C') or (EmployeeType = 'E') or (EmployeeType = 'F') or (EmployeeType = 'I'))</Criteria>
+   </group>
+   <group>
+     <Name>MC-GS-Employees-Reedsburg</Name>
+     <Description>Madison College Reedsburg Employees</Description>
+     <Criteria>((employeeStatus = 'A') and (officeLocationCode LIKE 'CCL20%')) and ((EmployeeType = 'A') or (EmployeeType = 'C') or (EmployeeType = 'E') or (EmployeeType = 'F') or (EmployeeType = 'I'))</Criteria>
+   </group>
+   <group>
+     <Name>MC-GS-Employees-Retired</Name>
+     <Description>Madison College Retirees</Description>
+     <Criteria>isRetired = 'True'</Criteria>
+   </group>
+</Groups>
